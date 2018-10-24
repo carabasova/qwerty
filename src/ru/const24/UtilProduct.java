@@ -1,7 +1,8 @@
 package ru.const24;
 
+import java.util.List;
+
 public class UtilProduct {
-}
 
     public static double calculateCosts(List<Product> productList, Currency costsCurrency,
                                         CurrencyConverter currencyConverter) {
@@ -13,5 +14,6 @@ public class UtilProduct {
         }
         return summ;
 
-
     }
+}
+

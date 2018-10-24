@@ -1,9 +1,9 @@
 package ru.const24;
 
 public class CurrencyConverter {
-    public final double unitUSD;
-    public final double unitRUB;
-    public final double unitEUR;
+    private final double unitUSD;
+    private final double unitRUB;
+    private final double unitEUR;
 
     public CurrencyConverter(double unitUSD, double unitRUB, double unitEUR) {
         this.unitUSD = unitUSD;
@@ -41,5 +41,17 @@ public class CurrencyConverter {
             //возращаем сумму в исходной валюте т.к. конвертируемая валюта равна исходной
             return money;
         }
+    }
+
+    public double getUnitUSD() {
+        return unitUSD;
+    }
+
+    public double getUnitRUB() {
+        return unitRUB;
+    }
+
+    public double getUnitEUR() {
+        return unitEUR;
     }
 }
